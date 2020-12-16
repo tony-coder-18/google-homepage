@@ -4,46 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Google</title>
   </head>
   <body>
     <navbar class="nav"
-      ><ul>
+      ><ul class="navbar-list">
         <li><a href="#">Gmail</a></li>
         <li><a href="#">Imágenes</a></li>
-
         <li>
-          <a href="#"><img src="images/apps-24px.svg" alt="" /> </a>
+          <a href="#" id="img-a"><img src="images/apps-24px.svg" alt="" /> </a>
         </li>
-        <li><a href="#">Iniciar sesión</a></li>
+        <li id="inicio-sesion-button"><a id="link-azul" href="#">Iniciar sesión</a></li>
       </ul>
     </navbar>
 
     <figure class="logo-div">
-      <img
+      <img id="center-image"
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         alt="Google logo"
       />
     </figure>
 
-    <div class="form">
+    <div class="form-container">
       <form action="get">
-        <input type="text" />
-        <button type="submit">Buscar con Google</button>
-        <button type="submit">Me siento con suerte</button>
+        <input id="first" type="text" />
+        <img id="lupita" src="images/search-24px.svg" alt="">
+        <button id ="second" type="submit">Buscar con Google</button>
+        <button id="third" type="submit">Me siento con suerte</button>
       </form>
     </div>
 
-    <footer><p>Colombia</p>
-    <ul>
-        <li>Publicidad</li>
-        <li>Negocios</li>
-        <li>Sobre Google</li>
-        <li>Cómo funciona la búsqueda</li>
-        <li>Privacidad</li>
-        <li>Condiciones</li>
-        <li>Preferencias</li>
-    </ul>
+
+
+    <footer>
+
+      <p> Colombia </p>
+      
+      <div class="container-footer-list">
+
+        <ul class="left">
+          <li><a href="#">Publicidad</a></li>
+          <li><a href="#">Negocios</a></li>
+          <li><a href="#">Sobre Google</a></li>  
+          <li><a href="#">Cómo funciona la Búsqueda</a></li>
+        </ul> 
+        <ul class="right">
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Condiciones</a></li>
+          <li><a href="#">Preferencias</a></li>
+        </ul>
+
+      </div>
+
     </footer>
+
+
+
   </body>
 </html>
