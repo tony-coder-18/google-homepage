@@ -140,7 +140,8 @@ footer {
 
 footer p {
     padding: 0.8rem 1.2rem;
-    
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0,0,0,.1);
 }
 
 .container-footer-list {
